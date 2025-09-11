@@ -90,6 +90,7 @@ public class UserController {
         return ResponseEntity.created(uri).body(userDto);
     }
 
+    // update user
     @PutMapping("/{id}")
     public ResponseEntity<UserDto> updateUser(@PathVariable(name = "id") Long id,
                               @RequestBody UpdateUserRequest request) {
